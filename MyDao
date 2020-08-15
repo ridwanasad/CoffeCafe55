@@ -1,0 +1,13 @@
+# CoffeCafe55
+
+package com.example.coffecafe;
+
+import androidx.room.Dao;
+import androidx.room.Insert;
+
+@Dao
+public interface MyDao {
+
+    @Insert
+    public void addAllMyDrinks (AllMyDrinks allMyDrinks);
+}
