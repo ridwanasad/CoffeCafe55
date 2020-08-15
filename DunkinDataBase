@@ -1,0 +1,12 @@
+# CoffeCafe55
+
+package com.example.coffecafe;
+
+import androidx.room.Database;
+import androidx.room.RoomDatabase;
+
+@Database(entities = {AllMyDrinks.class}, version = 1)
+public abstract class DunkinDatabase extends RoomDatabase {
+
+    public abstract MyDao myDao();
+}
